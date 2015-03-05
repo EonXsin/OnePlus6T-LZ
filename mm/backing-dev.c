@@ -16,6 +16,8 @@ static atomic_long_t bdi_seq = ATOMIC_LONG_INIT(0);
 
 struct backing_dev_info noop_backing_dev_info = {
 	.name		= "noop",
+	.ra_pages  = INITIAL_VM_MAX_READAHEAD
+		>> (PAGE_SHIFT - 10),
 	.capabilities	= BDI_CAP_NO_ACCT_AND_WRITEBACK,
 };
 EXPORT_SYMBOL_GPL(noop_backing_dev_info);
