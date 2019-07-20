@@ -1,0 +1,68 @@
+====================
+     2019-06-16    
+====================
+8a337b0  Update defconfig  [TeamFahQ]
+91f22c8  Revert "Disable module building since there aren't any... for now"  [TeamFahQ]
+
+====================
+     2019-06-15    
+====================
+
+====================
+     2019-06-14    
+====================
+
+====================
+     2019-06-13    
+====================
+f3aa4cc  Revert "Fix fingerprint icon"  [TeamFahQ]
+6eedeb9  dsi_panel: always restore panel mode when exiting aod  [Vachounet]
+4887671  Fix fingerprint icon  [HolyAngel]
+7e79149  gpu: drm: force fp pressed if fp mode on  [Vachounet]
+
+====================
+     2019-06-12    
+====================
+
+====================
+     2019-06-11    
+====================
+
+====================
+     2019-06-10    
+====================
+
+====================
+     2019-06-09    
+====================
+b03093e  Synchronize codes for OnePlus 6T OxygenOS 9.0.13 OnePlus 6 OxygenOS 9.0.5  [wujialong]
+1c8f2b8  modify for for tp issue  [brian yang]
+4882096  apply qualcomm dynamic adjust MIPI clock patch display  [guozhiming]
+2d11550  Optimize the shrinking of uid_lru pages  [qiuchangping]
+5a74f52  fix charger issue  [yangfangbiao]
+
+====================
+     2019-06-08    
+====================
+
+====================
+     2019-06-07    
+====================
+
+====================
+     2019-06-06    
+====================
+e2645cb  Disable module building since there aren't any... for now  [TeamFahQ]
+
+====================
+     2019-06-05    
+====================
+
+====================
+     2019-06-04    
+====================
+
+====================
+     2019-06-03    
+====================
+

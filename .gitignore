@@ -121,5 +121,5 @@ all.config
 *.list
 out/*
 scripts/rkp_cfp/tmp/*
-build.sh
-dirty.sh
+ORG-build.sh
+upload/*
