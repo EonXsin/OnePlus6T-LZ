@@ -129,3 +129,5 @@ out/*
 scripts/rkp_cfp/tmp/*
 ORG-build.sh
 upload/*
+build/Image.gz-dtb
+build/Changelog.txt
