@@ -68,23 +68,6 @@
 #include <linux/pm_qos.h>
 #include <linux/moduleparam.h>
 
-#define WAKE_GESTURES 		1
-#ifdef WAKE_GESTURES
-#define WAKE_GESTURE		0x0b
-#define SWEEP_RIGHT		0x01
-#define SWEEP_LEFT		0x02
-#define SWEEP_UP		0x04
-#define SWEEP_DOWN		0x08
-static struct synaptics_ts_data *gl_ts;
-static struct input_dev *gesture_dev;
-struct kobject *android_touch_kobj;
-EXPORT_SYMBOL_GPL(android_touch_kobj);
-static int gestures_switch = 0;
-static int s2w_switch = 0;
-static int dt2w_switch = 0;
-#endif
-
->>>>>>> cd37636b466f... Merge remote-tracking branch 'OnePlus/oneplus/SDM845_P_9.0' into ElementalX-3.00
 /*------------------------------------------------Global Define--------------------------------------------*/
 
 #define TP_UNKNOWN 0
