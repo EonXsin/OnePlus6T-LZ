@@ -51,8 +51,9 @@
 
 # Kernel zip Name
 ############################################################
-
-	kn=OnePlus6T-LZ-NDP-2.3.zip
+grep -o  'NDP-...' arch/arm64/configs/lightningzap_defconfig >temp
+VER=$(<temp)
+	kn=OP-6-6T-LZ-$VER.zip
 
 ############################################################
 # Clear terminal
