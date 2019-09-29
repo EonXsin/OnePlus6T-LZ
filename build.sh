@@ -51,8 +51,9 @@
 
 # Kernel zip Name
 ############################################################
-
-	kn=OnePlus6T-LZ-Pie-2.1.zip
+grep -o  'PIE-...' arch/arm64/configs/lightningzap_defconfig >temp
+VER=$(<temp)
+	kn=OP-6-6T-LZ-$VER.zip
 
 ############################################################
 # Clear terminal
@@ -66,7 +67,7 @@ reset
 
 	echo "	Cleaning up out and upload directories"
 	rm -Rf out/
-	rm -Rf upload/
+	#rm -Rf upload/
 	echo "	Out and upload directories removed!"
 
 	echo "	Remove old kernel image and changelog"

@@ -66,6 +66,7 @@
 #include "synaptics_dsx_core.h"
 #include <linux/oneplus/boot_mode.h>
 
+#include <linux/pm_qos.h>
 #include <linux/moduleparam.h>
 
 #define WAKE_GESTURES 		1

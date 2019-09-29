@@ -690,6 +690,10 @@ static int dsi_panel_led_bl_register(struct dsi_panel *panel,
 }
 #endif
 bool HBM_flag =false;
+extern int op_dimlayer_bl_alpha;
+extern int op_dimlayer_bl_enabled;
+extern int op_dimlayer_bl_enable_real;
+
 static int dsi_panel_update_backlight(struct dsi_panel *panel,
 	u32 bl_lvl)
 {
@@ -705,6 +709,18 @@ static int dsi_panel_update_backlight(struct dsi_panel *panel,
 	if (panel->is_hbm_enabled){
 		return 0;
 		}
+	if (op_dimlayer_bl_enabled != op_dimlayer_bl_enable_real) {
+		op_dimlayer_bl_enable_real = op_dimlayer_bl_enabled;
+		if (op_dimlayer_bl_enable_real) {
+		bl_lvl = op_dimlayer_bl_alpha;
+			pr_err("dc light enable\n");
+		} else {
+			pr_err("dc light disenable\n");
+		}
+	}
+	if (op_dimlayer_bl_enable_real) {
+		bl_lvl = op_dimlayer_bl_alpha;
+    }
     if (panel->bl_config.bl_high2bit){
 	if(HBM_flag==true){
 		return 0;
@@ -3917,6 +3933,28 @@ int dsi_panel_enable(struct dsi_panel *panel)
 	panel->panel_initialized = true;
 	pr_err("aod_mode =%d\n",panel->aod_mode);
 	mutex_unlock(&panel->panel_lock);
+
+        if (panel->acl_mode)
+            dsi_panel_set_acl_mode(panel, panel->acl_mode);
+
+        if (panel->srgb_mode)
+            dsi_panel_set_srgb_mode(panel, panel->srgb_mode);
+
+        if (panel->dci_p3_mode)
+            dsi_panel_set_dci_p3_mode(panel, panel->dci_p3_mode);
+
+        if (panel->night_mode)
+            dsi_panel_set_night_mode(panel, panel->night_mode);
+
+        if (panel->oneplus_mode)
+            dsi_panel_set_oneplus_mode(panel, panel->oneplus_mode);
+
+        if (panel->adaption_mode)
+            dsi_panel_set_adaption_mode(panel, panel->adaption_mode);
+
+        if (panel->hbm_mode)
+            dsi_panel_set_hbm_mode(panel, panel->hbm_mode);
+
 	if(panel->aod_mode==2){
 		rc = dsi_panel_set_aod_mode(panel, 2);
 		}
