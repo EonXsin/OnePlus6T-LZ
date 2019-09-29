@@ -67,7 +67,7 @@ reset
 
 	echo "	Cleaning up out and upload directories"
 	rm -Rf out/
-	rm -Rf upload/
+	#rm -Rf upload/
 	echo "	Out and upload directories removed!"
 
 	echo "	Remove old kernel image and changelog"
