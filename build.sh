@@ -51,7 +51,7 @@
 
 # Kernel zip Name
 ############################################################
-grep -o  'PIE-...' arch/arm64/configs/lightningzap_defconfig >temp
+grep -o  'STOCK-...' arch/arm64/configs/lightningzap_defconfig >temp
 VER=$(<temp)
 	kn=OP-6-6T-LZ-$VER.zip
 
