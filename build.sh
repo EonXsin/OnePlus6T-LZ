@@ -32,7 +32,7 @@
 	co=$k/out
 
 # Compile Path to out 
-	o="O=/media/Dev/OnePlus/OnePlus6T-LZ/out"
+	o="O=/media/Dev/OnePlus/OnePlus6T-LZ-10/out"
 
 # Source Path to compiled Image.gz-dtb
 	i=$k/out/arch/arm64/boot/Image.gz-dtb
