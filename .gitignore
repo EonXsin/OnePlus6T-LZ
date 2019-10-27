@@ -131,3 +131,4 @@ ORG-build.sh
 upload/*
 build/Image.gz-dtb
 build/Changelog.txt
+temp
