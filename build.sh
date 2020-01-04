@@ -26,13 +26,13 @@
 	dc=lightningzap_defconfig
 
 # Source Path to kernel tree
-	k=/media/Dev/OnePlus/OnePlus6T-LZ
+	k=/home/thomas/Android/kernels/OnePlus6T-LZ
 
 # Source Path to clean(empty) out folder
 	co=$k/out
 
 # Compile Path to out 
-	o="O=/media/Dev/OnePlus/OnePlus6T-LZ/out"
+	o="O=/home/thomas/Android/kernels/OnePlus6T-LZ/out"
 
 # Source Path to compiled Image.gz-dtb
 	i=$k/out/arch/arm64/boot/Image.gz-dtb

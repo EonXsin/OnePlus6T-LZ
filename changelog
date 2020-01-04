@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Exports
-dir=/media/Dev/OnePlus/OnePlus6T-LZ/build
+dir=/home/thomas/Android/kernels/OnePlus6T-LZ/build
 
 export Changelog=$dir/Changelog.txt
 

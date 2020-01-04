@@ -1,4 +1,4 @@
-TC_PATH=/media/Dev/Toolchains
+TC_PATH=/home/thomas/Android/kernels/OnePlus6T-LZ/Toolchains
 FILE=out/arch/arm64/boot/Image.gz-dtb
 export ANDROID_AARCH64=$TC_PATH/linaro/bin:$TC_PATH/aarch64-linux-android-4.9/bin
 export ARCH=arm64
