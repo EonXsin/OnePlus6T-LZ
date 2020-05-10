@@ -26,13 +26,13 @@
 	dc=lightningzap_defconfig
 
 # Source Path to kernel tree
-	k=/media/Dev/OnePlus/OnePlus6T-LZ-10
+	k=/home/thomas/Android/kernels/OnePlu6T-LZ/OnePlus6T-LZ-10
 
 # Source Path to clean(empty) out folder
 	co=$k/out
 
 # Compile Path to out 
-	o="O=/media/Dev/OnePlus/OnePlus6T-LZ-10/out"
+	o="O=/home/thomas/Android/kernels/OnePlu6T-LZ/OnePlus6T-LZ-10/out"
 
 # Source Path to compiled Image.gz-dtb
 	i=$k/out/arch/arm64/boot/Image.gz-dtb
@@ -96,12 +96,12 @@ reset
 ############################################################
 
 	echo "	First pass started.."
-	time make "$o" DTC_EXT=/usr/bin/dtc -j64
+	time make "$o" DTC_EXT=/usr/bin/dtc -j10
 	echo "	First pass completed!"
 	echo "	"
-	echo "	Starting Second Pass.."
-	time make "$o" DTC_EXT=/usr/bin/dtc -j64
-	echo "	Second pass completed!"
+	#echo "	Starting Second Pass.."
+	#time make "$o" DTC_EXT=/usr/bin/dtc -j64
+	#echo "	Second pass completed!"
 
 ############################################################
 # Copy image.gz-dtb to /build

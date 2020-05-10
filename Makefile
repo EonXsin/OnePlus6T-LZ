@@ -256,8 +256,8 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		?= $(SUBARCH)
 CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
-LZ		:= /media/Dev/Toolchains/linaro/
-LZ_TC		:= /media/Dev/Toolchains/linaro/bin/
+LZ		:= /home/thomas/Android/kernels/Toolchains/linaro/
+LZ_TC		:= /home/thomas/Android/kernels/Toolchains/linaro/bin/
 ARCH		:= arm64
 SUBARCH		:= arm64
 CC              := aarch64-linux-android-
