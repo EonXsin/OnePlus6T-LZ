@@ -123,6 +123,9 @@ kernel/configs/android-*.cfg
 *.patch
 *.list
 out/*
+temp
+build/*
+upload/*
 scripts/rkp_cfp/tmp/*
 build.sh
 dirty.sh
