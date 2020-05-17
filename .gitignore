@@ -124,8 +124,6 @@ kernel/configs/android-*.cfg
 *.list
 out/*
 temp
-build/*
+build/Image.gz-dtb
 upload/*
 scripts/rkp_cfp/tmp/*
-build.sh
-dirty.sh
