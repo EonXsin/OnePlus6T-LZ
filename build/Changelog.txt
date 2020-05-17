@@ -1,0 +1,70 @@
+====================
+     2020-05-17    
+====================
+58d5744  Makefile: Moved toolchain paths to .bashrc  [Thomas Raines]
+143abd0  .gitignore: stop ignoring build scripts and build tools  [Thomas Raines]
+
+====================
+     2020-05-16    
+====================
+
+====================
+     2020-05-15    
+====================
+
+====================
+     2020-05-14    
+====================
+fa2b02a  Do not add last commit number to version  [Thomas Raines]
+742bca9  mkcompile_h:Manually define Cross Compilers IOT shortent kernel name in settings  [TeamFahQ]
+8201f56  Update .gitignore and define toolchain  [Thomas Raines]
+
+====================
+     2020-05-13    
+====================
+f5b6ab5  cpufreq: blu_schedutil: Introduce initial bringup  [engstk]
+9995b73  defconfig:update locaversion  [Thomas Raines]
+51569e2f  cpufreq_ondemand:tweaking the gov  [TeamFahQ]
+557ea4e  zram: use lz4 compression  [flar2]
+09062c0  makefile: Enable O3 optimizations  [TeamFahQ]
+27826ce  lz-sysctl tweaks  [TeamFahQ]
+fffef2a  My insane readahead tweaks  [TeamFahQ]
+7da553b  Update .gitignore  [TeamFahQ]
+5fb7c91  initial lzify  [Thomas Raines]
+
+====================
+     2020-05-12    
+====================
+
+====================
+     2020-05-11    
+====================
+
+====================
+     2020-05-10    
+====================
+
+====================
+     2020-05-09    
+====================
+
+====================
+     2020-05-08    
+====================
+
+====================
+     2020-05-07    
+====================
+
+====================
+     2020-05-06    
+====================
+
+====================
+     2020-05-05    
+====================
+
+====================
+     2020-05-04    
+====================
+
