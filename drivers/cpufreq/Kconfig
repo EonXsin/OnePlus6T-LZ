@@ -268,6 +268,12 @@ config INPUT_BOOST_FREQ_PERF
 	help
 	  Input boost frequency for the performance CPU cluster.
 
+config INPUT_BOOST_FREQ_PRIME
+	int "Prime cluster boost freq"
+	default "0"
+	help
+	  Input boost frequency for the prime CPU cluster.
+
 config INPUT_STUNE_BOOST_DURATION
 	int "Foreground app SchedTune boost duration"
 	depends on DYNAMIC_STUNE_BOOST

@@ -69,6 +69,9 @@ static int set_input_boost_freq(const char *buf, const struct kernel_param *kp)
 	if (task_is_booster(current))
 		goto out;
 
+	if (task_is_booster(current))
+		return 0;
+
 	while ((cp = strpbrk(cp + 1, " :")))
 		ntokens++;
 
@@ -379,6 +382,8 @@ static int cpu_boost_init(void)
 			s->input_boost_freq = CONFIG_INPUT_BOOST_FREQ_LP;
 		if (cpu == 4)
 			s->input_boost_freq = CONFIG_INPUT_BOOST_FREQ_PERF;
+		if (cpu == 7)
+			s->input_boost_freq = CONFIG_INPUT_BOOST_FREQ_PRIME;
 	}
 	cpufreq_register_notifier(&boost_adjust_nb, CPUFREQ_POLICY_NOTIFIER);
 
