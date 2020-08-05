@@ -1,59 +1,281 @@
 ====================
-     2020-05-30    
+     2020-07-12    
+====================
+7acff79  Merge branch 'ten' of https://github.com/Evolution-X-Devices/kernel_oneplus_sdm845 into ten  [Thomas Raines]
+
+====================
+     2020-07-11    
+====================
+d0ebc11  drm/msm/sde: add sysfs node in dpu driver to provide fps  [Shubhashree Dhar]
+
+====================
+     2020-07-10    
+====================
+a184dcb  Merge android-linux-stable into IllusionKernel  [Anirudh Gupta]
+
+====================
+     2020-07-09    
+====================
+85a41bd  Merge 4.9.230 into oneplus/SDM845_Q_10.0  [Nathan Chancellor]
+eb5d955  Linux 4.9.230  [Greg Kroah-Hartman]
+1535f26  efi: Make it possible to disable efivar_ssdt entirely  [Peter Jones]
+396ba2f  netfilter: nf_conntrack_h323: lost .data_len definition for Q.931/ipv6  [Vasily Averin]
+dd54eb6  MIPS: Add missing EHB in mtc0 -> mfc0 sequence for DSPen  [Hauke Mehrtens]
+28f47e0  cifs: Fix the target file was deleted when rename failed.  [Zhang Xiaoxu]
+2c33565  SMB3: Honor persistent/resilient handle flags for multiuser mounts  [Paul Aurich]
+063a624  SMB3: Honor 'seal' flag for multiuser mounts  [Paul Aurich]
+ab0b5e9  Revert "ALSA: usb-audio: Improve frames size computation"  [Greg Kroah-Hartman]
+ac518a2  i2c: algo-pca: Add 0x78 as SCL stuck low status for PCA9665  [Chris Packham]
+0733b1a  virtio-blk: free vblk-vqs in error path of virtblk_probe()  [Hou Tao]
+a56fe73  hwmon: (acpi_power_meter) Fix potential memory leak in acpi_power_meter_add()  [Misono Tomohiro]
+25c9965  hwmon: (max6697) Make sure the OVERT mask is set correctly  [Chu Lin]
+69d3042  cxgb4: parse TC-U32 key values and masks natively  [Rahul Lakkireddy]
+0c19934  sched/rt: Show the 'sched_rr_timeslice' SCHED_RR timeslice tuning knob in milliseconds  [Shile Zhang]
+04d462a  crypto: af_alg - fix use-after-free in af_alg_accept() due to bh_lock_sock()  [Herbert Xu]
+2968445  kgdb: Avoid suspicious RCU usage warning  [Douglas Anderson]
+4ea5c90  usb: usbtest: fix missing kfree(dev->buf) in usbtest_disconnect  [Zqiang]
+ba9950a  mm/slub: fix stack overruns with SLUB_STATS  [Qian Cai]
+96b0120  mm/slub.c: fix corrupted freechain in deactivate_slab()  [Dongli Zhang]
+3cc5b83  usbnet: smsc95xx: Fix use-after-free after removal  [Tuomas Tynkkynen]
+5960439  EDAC/amd64: Read back the scrub rate PCI register on F15h  [Borislav Petkov]
+b647889  mm: fix swap cache node allocation mask  [Hugh Dickins]
+b6a357f  btrfs: fix data block group relocation failure due to concurrent scrub  [Filipe Manana]
+8714d9b  btrfs: cow_file_range() num_bytes and disk_num_bytes are same  [Anand Jain]
+a39010d  btrfs: fix a block group ref counter leak after failure to remove block group  [Filipe Manana]
+
+====================
+     2020-07-08    
 ====================
 
 ====================
-     2020-05-29    
+     2020-07-07    
 ====================
 
 ====================
-     2020-05-28    
+     2020-07-06    
 ====================
 
 ====================
-     2020-05-27    
+     2020-07-05    
 ====================
 
 ====================
-     2020-05-26    
+     2020-07-04    
 ====================
 
 ====================
-     2020-05-25    
+     2020-07-03    
 ====================
 
 ====================
-     2020-05-24    
+     2020-07-02    
 ====================
 
 ====================
-     2020-05-23    
+     2020-07-01    
 ====================
+0a97010  Merge https://github.com/android-linux-stable/op6 into aosip  [celtare21]
+778df84  configs: Disable AUDIT  [celtare21]
+c2ba118  selinux: don't require auditing  [kdrag0n]
+3af6a21  Revert "sched: rt: Use RCU lock in rt task cpu select path"  [celtare21]
+89f092f  Merge 4.9.229 into oneplus/SDM845_Q_10.0  [Nathan Chancellor]
 
 ====================
-     2020-05-22    
+     2020-06-30    
 ====================
+df4674d  Linux 4.9.229  [Sasha Levin]
+c496fa7  Revert "tty: hvc: Fix data abort due to race in hvc_open"  [Greg Kroah-Hartman]
+2bda23c  xfs: add agf freeblocks verify in xfs_agf_verify  [Zheng Bin]
+5c85c81  NFSv4 fix CLOSE not waiting for direct IO compeletion  [Olga Kornievskaia]
+86dfbc1  pNFS/flexfiles: Fix list corruption if the mirror count changes  [Trond Myklebust]
+a20cece  SUNRPC: Properly set the @subbuf parameter of xdr_buf_subsegment()  [Chuck Lever]
+04e6e06  sunrpc: fixed rollback in rpc_gssd_dummy_populate()  [Vasily Averin]
+6d3468b  drm/radeon: fix fb_div check in ni_init_smc_spll_table()  [Denis Efremov]
+587287c  tracing: Fix event trigger to accept redundant spaces  [Masami Hiramatsu]
+661a553  arm64: perf: Report the PC value in REGS_ABI_32 mode  [Jiping Ma]
+d09a61a  ocfs2: fix panic on nfs server over ocfs2  [Junxiao Bi]
+5257ba3  ocfs2: fix value of OCFS2_INVALID_SLOT  [Junxiao Bi]
+8b3f615  ocfs2: load global_inode_alloc  [Junxiao Bi]
+b581a11  mm/slab: use memzero_explicit() in kzfree()  [Waiman Long]
+e3bca0f  KVM: X86: Fix MSR range of APIC registers in X2APIC mode  [Xiaoyao Li]
+2523f24  ACPI: sysfs: Fix pm_profile_attr type  [Nathan Chancellor]
+981bcb1  ALSA: hda: Add NVIDIA codec IDs 9a & 9d through a0 to patch table  [Aaron Plattner]
+c032e65  blktrace: break out of blktrace setup on concurrent calls  [Luis Chamberlain]
+48427c3  kbuild: improve cc-option to clean up all temporary files  [Masahiro Yamada]
+31a2029  s390/ptrace: fix setting syscall number  [Sven Schnelle]
+70a5b8b  net: alx: fix race condition in alx_remove  [Zekun Shen]
+5fef1b3  ata/libata: Fix usage of page address by page_address in ata_scsi_mode_select_xlat function  [Ye Bin]
+37b31f4  sched/core: Fix PI boosting between RT and DEADLINE tasks  [Juri Lelli]
+6423d90  netfilter: ipset: fix unaligned atomic access  [Russell King]
+19a197f  usb: gadget: udc: Potential Oops in error handling code  [Dan Carpenter]
+6edb24f  ARM: imx5: add missing put_device() call in imx_suspend_alloc_ocram()  [yu kuai]
+386907c  net: qed: fix excessive QM ILT lines consumption  [Alexander Lobakin]
+6a7cfbd  net: qed: fix NVMe login fails over VFs  [Alexander Lobakin]
+ea6eb20  net: qed: fix left elements count calculation  [Alexander Lobakin]
+79eb4f0  RDMA/mad: Fix possible memory leak in ib_mad_post_receive_mads()  [Fan Guo]
+83fc0cb  efi/esrt: Fix reference count leak in esre_create_sysfs_entry.  [Qiushi Wu]
+7e2632c  cifs/smb3: Fix data inconsistent when zero file range  [Zhang Xiaoxu]
+2306f63  cifs/smb3: Fix data inconsistent when punch hole  [Zhang Xiaoxu]
+dfa2cac  xhci: Poll for U0 after disabling USB2 LPM  [Kai-Heng Feng]
+f05360b  ALSA: usb-audio: Fix OOB access of mixer element list  [Takashi Iwai]
+380006c  ALSA: usb-audio: Clean up mixer element list traverse  [Takashi Iwai]
+65f4bed  ALSA: usb-audio: uac1: Invalidate ctl on interrupt  [Julian Scheel]
+8de06e1  cdc-acm: Add DISABLE_ECHO quirk for Microchip/SMSC chip  [Joakim Tjernlund]
+dbf2c1a  xhci: Fix enumeration issue when setting max packet size for FS devices.  [Al Cooper]
+f0a2a8d  xhci: Fix incorrect EP_STATE_MASK  [Mathias Nyman]
+fc65286  ALSA: usb-audio: add quirk for Denon DCD-1500RE  [Yick W. Tse]
+6119a89  usb: host: ehci-exynos: Fix error check in exynos_ehci_probe()  [Tang Bin]
+469adc4  USB: ehci: reopen solution for Synopsys HC bug  [Longfang Liu]
+4813288  usb: add USB_QUIRK_DELAY_INIT for Logitech C922  [Tomasz Meresiński]
+aedf21c  usb: dwc2: Postponed gadget registration to the udc class driver  [Minas Harutyunyan]
+b680168  USB: ohci-sm501: Add missed iounmap() in remove  [Chuhong Yuan]
+6aa66b7  net: core: reduce recursion limit value  [Taehee Yoo]
+6732121  net: Do not clear the sock TX queue in sk_set_socket()  [Tariq Toukan]
+6ac341c  net: Fix the arp error in some cases  [guodeqing]
+5030f66  sctp: Don't advertise IPv4 addresses if ipv6only is set on the socket  [Marcelo Ricardo Leitner]
+05cc823  tcp: grow window for OOO packets only for SACK flows  [Eric Dumazet]
+743475d  ip6_gre: fix use-after-free in ip6gre_tunnel_lookup()  [Taehee Yoo]
+98d3884  tcp_cubic: fix spurious HYSTART_DELAY exit upon drop in min RTT  [Neal Cardwell]
+ae1c468  ip_tunnel: fix use-after-free in ip_tunnel_lookup()  [Taehee Yoo]
+b6e5086  tg3: driver sleeps indefinitely when EEH errors exceed eeh_max_freezes  [David Christensen]
+5e43d1c  rxrpc: Fix notification call on completion of discarded calls  [David Howells]
+31dc204  rocker: fix incorrect error handling in dma_rings_init  [Aditya Pakki]
+6c8b631  net: usb: ax88179_178a: fix packet alignment padding  [Jeremy Kerr]
+40b5693  net: fix memleak in register_netdevice()  [Yang Yingliang]
+d2c7abe  mld: fix memory leak in ipv6_mc_destroy_dev()  [Wang Hai]
+307fa7a  fix a braino in "sparc32: fix register window handling in genregs32_[gs]et()"  [Al Viro]
+0263059  net: sched: export __netdev_watchdog_up()  [Valentin Longchamp]
+cb6f92e  l2tp: Allow duplicate session creation with UDP  [Ridge Kennedy]
+ec0bdc2  scsi: scsi_devinfo: handle non-terminated strings  [Martin Wilck]
+b17fd5f  mtd: rawnand: tmio: Fix the probe error path  [Miquel Raynal]
+fb8233b  mtd: rawnand: mtk: Fix the probe error path  [Miquel Raynal]
+f8183c7  mtd: rawnand: plat_nand: Fix the probe error path  [Miquel Raynal]
+4f9c047  mtd: rawnand: socrates: Fix the probe error path  [Miquel Raynal]
+a2db51d  mtd: rawnand: orion: Fix the probe error path  [Miquel Raynal]
+9fc4e02  mtd: rawnand: xway: Fix the probe error path  [Miquel Raynal]
+32125cc  mtd: rawnand: sharpsl: Fix the probe error path  [Miquel Raynal]
+ac13371  mtd: rawnand: diskonchip: Fix the probe error path  [Miquel Raynal]
+6624691  mtd: rawnand: Pass a nand_chip object to nand_release()  [Boris Brezillon]
+fd1a885  media: dvb_frontend: fix return error code  [Mauro Carvalho Chehab]
+39f03fe  media: dvb_frontend: fix wrong cast in compat_ioctl  [Katsuhiro Suzuki]
+20bcc23  media: dvb_frontend: Add commands implementation for compat ioct  [Jaedon Shin]
+415ba04  media: dvb_frontend: Add compat_ioctl callback  [Jaedon Shin]
+630b81e  media: dvb_frontend: Add unlocked_ioctl in dvb_frontend.c  [Jaedon Shin]
+ae5c6c4  media: dvb_frontend: be sure to init dvb_frontend_handle_ioctl() return code  [Mauro Carvalho Chehab]
+b252335  media: dvb_frontend: dtv_property_process_set() cleanups  [Satendra Singh Thakur]
+55089d3  media: dvb_frontend: fix return values for FE_SET_PROPERTY  [Mauro Carvalho Chehab]
+79c4efe  media: dvb_frontend: better document the -EPERM condition  [Mauro Carvalho Chehab]
+b287a51  media: dvb_frontend: get rid of property cache's state  [Mauro Carvalho Chehab]
+b209946  media: dvb_frontend: cleanup ioctl handling logic  [Mauro Carvalho Chehab]
+785a948  media: dvb_frontend: cleanup dvb_frontend_ioctl_properties()  [Mauro Carvalho Chehab]
+43619b3  media: dvb_frontend: get rid of set_property() callback  [Mauro Carvalho Chehab]
+84deefe  media: friio-fe: get rid of set_property()  [Mauro Carvalho Chehab]
+f87cc0c  media: stv6110: get rid of a srate dead code  [Mauro Carvalho Chehab]
+380a548  media: stv0288: get rid of set_property boilerplate  [Mauro Carvalho Chehab]
+c0d4c1a  media: dvb_frontend: get rid of get_property() callback  [Mauro Carvalho Chehab]
+dc06ae4  media: dvb/frontend.h: document the uAPI file  [Mauro Carvalho Chehab]
+fb4ffc2  media: dvb/frontend.h: move out a private internal structure  [Mauro Carvalho Chehab]
+bf48597  media: dvb_frontend: initialize variable s with FE_NONE instead of 0  [Colin Ian King]
+815be3b  net: core: device_rename: Use rwsem instead of a seqcount  [Ahmed S. Darwish]
+e8f4558  sched/rt, net: Use CONFIG_PREEMPTION.patch  [Thomas Gleixner]
+97a17ed  e1000e: Do not wake up the system via WOL if device wakeup is disabled  [Chen Yu]
+ed61e8c  kretprobe: Prevent triggering kretprobe from within kprobe_flush_task  [Jiri Olsa]
+45ac65d  x86/kprobes: Avoid kretprobe recursion bug  [Masami Hiramatsu]
+a07f99a  powerpc/kprobes: Fixes for kprobe_lookup_name() on BE  [Naveen N. Rao]
+354fb59  kprobes: Fix to protect kick_kprobe_optimizer() by kprobe_mutex  [Masami Hiramatsu]
+3f51fa2  crypto: algboss - don't wait during notifier callback  [Eric Biggers]
+5dfd73f  drm/i915: Whitelist context-local timestamp in the gen9 cmdparser  [Chris Wilson]
+11c4669  s390: fix syscall_get_error for compat processes  [Dmitry V. Levin]
+5fbc7c9  block: nr_sects_write(): Disable preemption on seqcount write  [Ahmed S. Darwish]
+800a063  x86/boot/compressed: Relax sed symbol type regex for LLVM ld.lld  [Ard Biesheuvel]
+0d6115e  drm/dp_mst: Increase ACT retry timeout to 3s  [Lyude Paul]
+e09cb9c  ext4: fix partial cluster initialization when splitting extent  [Jeffle Xu]
+3062787  selinux: fix double free  [Tom Rix]
+d604a3a  drm/qxl: Use correct notify port address when creating cursor ring  [Huacai Chen]
+203de65  drm/dp_mst: Reformat drm_dp_check_act_status() a bit  [Lyude Paul]
+ecc2b1e  drm: encoder_slave: fix refcouting error for modules  [Wolfram Sang]
+3a4b096  libata: Use per port sync for detach  [Kai-Heng Feng]
+a54b15a  block: Fix use-after-free in blkdev_get()  [Jason Yan]
+be67683  bcache: fix potential deadlock problem in btree_gc_coalesce  [Zhiqiang Liu]
+0f61e86  perf report: Fix NULL pointer dereference in hists__fprintf_nr_sample_events()  [Gaurav Singh]
+104592a  usb/ehci-platform: Set PM runtime as active on resume  [Qais Yousef]
+9e148a5  usb/xhci-plat: Set PM runtime as active on resume  [Qais Yousef]
+a91af57  scsi: acornscsi: Fix an error handling path in acornscsi_probe()  [Christophe JAILLET]
+c5560e9  selftests/net: in timestamping, strncpy needs to preserve null byte  [tannerlove]
+88b35c5  selftests/vm/pkeys: fix alloc_random_pkey() to make it really random  [Ram Pai]
+1bb5b80  elfnote: mark all .note sections SHF_ALLOC  [Nick Desaulniers]
+ea20271  include/linux/bitops.h: avoid clang shift-count-overflow warnings  [Arnd Bergmann]
+900bf0e  lib/zlib: remove outdated and incorrect pre-increment optimization  [Jann Horn]
+7b2dbe4  crypto: omap-sham - add proper load balancing support for multicore  [Tero Kristo]
+c2f9a6b  pinctrl: imxl: Fix an error handling path in 'imx1_pinctrl_core_probe()'  [Christophe JAILLET]
+fbffea5  scsi: iscsi: Fix reference count leak in iscsi_boot_create_kobj  [Qiushi Wu]
+d534300  gfs2: Allow lock_nolock mount to specify jid=X  [Bob Peterson]
+168b845  openrisc: Fix issue with argument clobbering for clone/fork  [Stafford Horne]
+aa33287  ASoC: fsl_asrc_dma: Fix dma_chan leak when config DMA channel failed  [Xiyu Yang]
+ae7a973  extcon: adc-jack: Fix an error handling path in 'adc_jack_probe()'  [Christophe JAILLET]
+bda938d  NFSv4.1 fix rpc_call_done assignment for BIND_CONN_TO_SESSION  [Olga Kornievskaia]
+d5f224c  net: sunrpc: Fix off-by-one issues in 'rpc_ntop6'  [Fedor Tokarev]
+db2451d  clk: bcm2835: Fix return type of bcm2835_register_gate  [Nathan Chancellor]
+b4a4925  usb: gadget: Fix issue with config_ep_by_speed function  [Pawel Laszczak]
+03eeb91  usb: gadget: fix potential double-free in m66592_probe.  [Qiushi Wu]
+e03c43a  usb: gadget: lpc32xx_udc: don't dereference ep pointer before null check  [Colin Ian King]
+fd554743  USB: gadget: udc: s3c2410_udc: Remove pointless NULL check in s3c2410_udc_nuke  [Nathan Chancellor]
+628d235  usb: dwc2: gadget: move gadget resume after the core is in L0 state  [Fabrice Gasnier]
+87c06e4  watchdog: da9062: No need to ping manually before setting timeout  [Stefan Riedmueller]
+6021e1f  IB/cma: Fix ports memory leak in cma_configfs  [Maor Gottlieb]
+3facf1a  PCI/PTM: Inherit Switch Downstream Port PTM settings from Upstream Port  [Bjorn Helgaas]
+04e0afc  powerpc/64s/pgtable: fix an undefined behaviour  [Qian Cai]
+bc99df9  clk: samsung: exynos5433: Add IGNORE_UNUSED flag to sclk_i2s1  [Marek Szyprowski]
+707818e  tty: n_gsm: Fix bogus i++ in gsm_data_kick  [Gregory CLEMENT]
+1d2deee  USB: host: ehci-mxc: Add error handling in ehci_mxc_drv_probe()  [Tang Bin]
+f3d12f8  drm/msm/mdp5: Fix mdp5_init error path for failed mdp5_kms allocation  [Roy Spliet]
+5365fc3  usb/ohci-platform: Fix a warning when hibernating  [Qais Yousef]
+4481d24  vfio-pci: Mask cap zero  [Alex Williamson]
+73ce7f3  powerpc/ps3: Fix kexec shutdown hang  [Geoff Levand]
+d0627bd  powerpc/pseries/ras: Fix FWNMI_VALID off by one  [Nicholas Piggin]
+73a5261  tty: n_gsm: Fix waking up upper tty layer when room available  [Gregory CLEMENT]
+226dc83  tty: n_gsm: Fix SOF skipping  [Gregory CLEMENT]
+a49d7cc  clk: ti: composite: fix memory leak  [Tero Kristo]
+49302f4  dlm: remove BUG() before panic()  [Arnd Bergmann]
+b3ab6af  scsi: mpt3sas: Fix double free warnings  [Suganath Prabu S]
+3d34e95  power: supply: smb347-charger: IRQSTAT_D is volatile  [Dmitry Osipenko]
+7347ed2  power: supply: lp8788: Fix an error handling path in 'lp8788_charger_probe()'  [Christophe JAILLET]
+e0596b2  PCI/ASPM: Allow ASPM on links to PCIe-to-PCI/PCI-X Bridges  [Kai-Heng Feng]
+f84bd31  PCI: rcar: Fix incorrect programming of OB windows  [Andrew Murray]
+fe51350  drivers: base: Fix NULL pointer exception in __platform_driver_probe() if a driver developer is foolish  [Kuppuswamy Sathyanarayanan]
+95839ab  serial: amba-pl011: Make sure we initialize the port.lock spinlock  [John Stultz]
+9367d6e  i2c: pxa: fix i2c_pxa_scream_blue_murder() debug output  [Russell King]
+af1a71e  staging: sm750fb: add missing case while setting FB_VISUAL  [Matej Dujava]
+b6c61e4  tty: hvc: Fix data abort due to race in hvc_open  [Raghavendra Rao Ananta]
+f8c7afc  s390/qdio: put thinint indicator after early error  [Julian Wiedmann]
+5ef30e4  ALSA: usb-audio: Improve frames size computation  [Alexander Tsoy]
+1e492f9  scsi: ibmvscsi: Don't send host info in adapter info MAD after LPM  [Tyrel Datwyler]
+0ac65ce  scsi: sr: Fix sr_probe() missing deallocate of device minor  [Simon Arlott]
+ef9fe74  mksysmap: Fix the mismatch of '.L' symbols in System.map  [ashimida]
+9cf9388  yam: fix possible memory leak in yam_init_driver  [Wang Hai]
+45d44c0  powerpc/crashkernel: Take "mem=" option into account  [Pingfan Liu]
+6915159  nfsd: Fix svc_xprt refcnt leak when setup callback client failed  [Xiyu Yang]
+8921113  powerpc/perf/hv-24x7: Fix inconsistent output values incase multiple hv-24x7 events run  [Kajol Jain]
+f09c833  clk: clk-flexgen: fix clock-critical handling  [Alain Volmat]
+15e816a  scsi: lpfc: Fix lpfc_nodelist leak when processing unsolicited event  [Xiyu Yang]
+d93d04b  mfd: wm8994: Fix driver operation if loaded as modules  [Marek Szyprowski]
+58d4c2e  vfio/pci: fix memory leaks in alloc_perm_bits()  [Qian Cai]
+72ad08b  ps3disk: use the default segment boundary  [Emmanuel Nicolet]
+9a91d52  PCI: aardvark: Don't blindly enable ASPM L0s and don't write to read-only register  [Pali Rohár]
+372a8b5  usblp: poison URBs upon disconnect  [Oliver Neukum]
+18f7ec3  i2c: pxa: clear all master action bits in i2c_pxa_stop_message()  [Russell King]
+6dd652f  iio: bmp280: fix compensation of humidity  [Andreas Klinger]
+6694991  scsi: qla2xxx: Fix issue with adapter's stopping state  [Viacheslav Dubeyko]
+e685174  ALSA: isa/wavefront: prevent out of bounds write in ioctl  [Dan Carpenter]
+136476d  ARM: integrator: Add some Kconfig selections  [Linus Walleij]
+bf54b9e  backlight: lp855x: Ensure regulators are disabled on probe failure  [Jon Hunter]
+7cd829f  clk: qcom: msm8916: Fix the address location of pll->config_reg  [Bryan O'Donoghue]
+ca33fc7  iio: pressure: bmp280: Tolerate IRQ before registering  [Andy Shevchenko]
+4b2abe8  i2c: piix4: Detect secondary SMBus controller on AMD AM4 chipsets  [Adam Honse]
+efe93a7  clk: sunxi: Fix incorrect usage of round_down()  [Rikard Falkeborn]
+a00ddd7  power: supply: bq24257_charger: Replace depends on REGMAP_I2C with select  [Enric Balletbo i Serra]
 
 ====================
-     2020-05-21    
-====================
-
-====================
-     2020-05-20    
-====================
-
-====================
-     2020-05-19    
-====================
-
-====================
-     2020-05-18    
-====================
-28d4475  Restore changelog script  [Thomas Raines]
-58d5744  Makefile: Moved toolchain paths to .bashrc  [Thomas Raines]
-143abd0  .gitignore: stop ignoring build scripts and build tools  [Thomas Raines]
-
-====================
-     2020-05-17    
+     2020-06-29    
 ====================
 
