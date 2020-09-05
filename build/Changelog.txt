@@ -1,126 +1,57 @@
 ====================
-     2020-08-05    
+     2020-09-04    
 ====================
-a2dc65d  Merge branch 'ten' of https://github.com/AOSiP-Devices/kernel_oneplus_sdm845 into ten  [Thomas Raines]
+9ea8a31  fiops-iosched: update for linux 4.9  [flar2]
 
 ====================
-     2020-08-04    
-====================
-
-====================
-     2020-08-03    
+     2020-09-03    
 ====================
 
 ====================
-     2020-08-02    
-====================
-e4d87018  net: Import WireGuard version 1.0.20200729  [Anirudh Gupta]
-
-====================
-     2020-08-01    
-====================
-a7cdf35  Merge android-linux-stable into IllusionKernel  [Anirudh Gupta]
-78b3112  Merge 4.9.232 into oneplus/SDM845_Q_10.0  [Nathan Chancellor]
-8d6b541  Linux 4.9.232  [Greg Kroah-Hartman]
-eef50fa  perf: Make perf able to build with latest libbfd  [Changbin Du]
-f578600  perf tools: Fix snprint warnings for gcc 8  [Jiri Olsa]
-666fe39  perf annotate: Use asprintf when formatting objdump command line  [Arnaldo Carvalho de Melo]
-045c228  perf probe: Fix to check blacklist address correctly  [Masami Hiramatsu]
-8e5f820  xfs: set format back to extents if xfs_bmap_extents_to_btree  [Eric Sandeen]
-65cddd5  regmap: debugfs: check count when read regmap file  [Peng Fan]
-4effbbd  drivers/net/wan/x25_asy: Fix to make it work  [Xie He]
-479be52  ip6_gre: fix null-ptr-deref in ip6gre_init_net()  [Wei Yongjun]
-35c3c8f  tcp: allow at most one TLP probe per flight  [Yuchung Cheng]
-15a9765  AX.25: Prevent integer overflows in connect and sendmsg  [Dan Carpenter]
-3a74e28  rxrpc: Fix sendmsg() returning EPIPE due to recvmsg() returning ENODATA  [David Howells]
-feed32a  net: udp: Fix wrong clean up for IS_UDPLITE macro  [Miaohe Lin]
-c0e3a9a  net-sysfs: add a newline when printing 'tx_timeout' by sysfs  [Xiongfeng Wang]
-b744131  dev: Defer free of skbs in flush_backlog  [Subash Abhinov Kasiviswanathan]
-8b097fc  AX.25: Prevent out-of-bounds read in ax25_sendmsg()  [Peilin Ye]
-9aaa5f9  AX.25: Fix out-of-bounds read in ax25_connect()  [Peilin Ye]
-6f02463  ath9k: Fix regression with Atheros 9271  [Mark O'Donovan]
-a70c4a2  ath9k: Fix general protection fault in ath9k_hif_usb_rx_cb  [Qiujun Huang]
-518d1af  parisc: Add atomic64_set_release() define to avoid CPU soft lockups  [John David Anglin]
-77f6d93  io-mapping: indicate mapping failure  [Michael J. Ruhl]
-bcd79c5  mm/memcg: fix refcount error while moving and swapping  [Hugh Dickins]
-d98d958  Makefile: Fix GCC_TOOLCHAIN_DIR prefix for Clang cross compilation  [Fangrui Song]
-3307b4e  vt: Reject zero-sized screen buffer size.  [Tetsuo Handa]
-bce9a1f  serial: 8250_mtk: Fix high-speed baud rates clamping  [Serge Semin]
-81e5703  serial: 8250: fix null-ptr-deref in serial8250_start_tx()  [Yang Yingliang]
-75a0cba  staging: comedi: addi_apci_1564: check INSN_CONFIG_DIGITAL_TRIG shift  [Ian Abbott]
-ecceea1  staging: comedi: addi_apci_1500: check INSN_CONFIG_DIGITAL_TRIG shift  [Ian Abbott]
-63fe8c9  staging: comedi: ni_6527: fix INSN_CONFIG_DIGITAL_TRIG support  [Ian Abbott]
-bfe0aac  staging: comedi: addi_apci_1032: check INSN_CONFIG_DIGITAL_TRIG shift  [Ian Abbott]
-c2646b9  staging: wlan-ng: properly check endpoint types  [Rustam Kovhaev]
-13b502b  Revert "cifs: Fix the target file was deleted when rename failed."  [Steve French]
-41f5f86  usb: xhci: Fix ASM2142/ASM3142 DMA addressing  [Forest Crossman]
-a9423d5  usb: xhci-mtk: fix the failure of bandwidth allocation  [Chunfeng Yun]
-8844e170  x86: math-emu: Fix up 'cmp' insn for clang ias  [Arnd Bergmann]
-998c085  arm64: Use test_tsk_thread_flag() for checking TIF_SINGLESTEP  [Will Deacon]
-f038d10  usb: gadget: udc: gr_udc: fix memleak on error handling path in gr_ep_init()  [Evgeny Novikov]
-9ef0262  dmaengine: ioat setting ioat timeout as module parameter  [Leonid Ravich]
-05f479d  regmap: dev_get_regmap_match(): fix string comparison  [Marc Kleine-Budde]
-8830292  dmaengine: tegra210-adma: Fix runtime PM imbalance on error  [Dinghao Liu]
-d189361  HID: apple: Disable Fn-key key-re-mapping on clone keyboards  [Hans de Goede]
-95c0fa1  HID: i2c-hid: add Mediacom FlexBook edge13 to descriptor override  [Federico Ricchiuto]
-5e085f2  scripts/decode_stacktrace: strip basepath from all paths  [Pi-Hsun Shih]
-49c4d85  net: smc91x: Fix possible memory leak in smc_drv_probe()  [Wang Hai]
-059e239  net: dp83640: fix SIOCSHWTSTAMP to update the struct with actual configuration  [Sergey Organov]
-041aff4  ax88172a: fix ax88172a_unbind() failures  [George Kennedy]
-7a1d03d  hippi: Fix a size used in a 'pci_free_consistent()' in an error handling path  [Christophe JAILLET]
-1ff463b  bnxt_en: Fix race when modifying pause settings.  [Vasundhara Volam]
-59b6d22  btrfs: fix mount failure caused by race with umount  [Boris Burkov]
-c6ff26b  btrfs: fix double free on ulist after backref resolution failure  [Filipe Manana]
-f916205  ASoC: rt5670: Correct RT5670_LDO_SEL_MASK  [Hans de Goede]
-4881d9b  ALSA: info: Drop WARN_ON() from buffer NULL sanity check  [Takashi Iwai]
-fe6ba50  uprobes: Change handle_swbp() to send SIGTRAP with si_code=SI_KERNEL, to fix GDB regression  [Oleg Nesterov]
-968bef6  SUNRPC reverting d03727b248d0 ("NFSv4 fix CLOSE not waiting for direct IO compeletion")  [Olga Kornievskaia]
-237169c  drm/nouveau/i2c/g94-: increase NV_PMGR_DP_AUXCTL_TRANSACTREQ timeout  [Ben Skeggs]
-31b10f2  net: sky2: initialize return of gm_phy_read  [Tom Rix]
-4d565f4  drivers/net/wan/lapbether: Fixed the value of hard_header_len  [Xie He]
-55ba6c9  xtensa: update *pos in cpuinfo_op.next  [Max Filippov]
-068dae9  xtensa: fix __sync_fetch_and_{and,or}_4 declarations  [Max Filippov]
-f7a4471  scsi: scsi_transport_spi: Fix function pointer check  [Tom Rix]
-12b5138  mac80211: allow rx of mesh eapol frames with default rx key  [Markus Theil]
-309767d  pinctrl: amd: fix npins for uart0 in kerncz_groups  [Jacky Hu]
-
-====================
-     2020-07-31    
-====================
-a786f02  Merge android-linux-stable into IllusionKernel  [Anirudh Gupta]
-34c8fe4  Merge 4.9.231 into oneplus/SDM845_Q_10.0  [Nathan Chancellor]
-
-====================
-     2020-07-30    
+     2020-09-02    
 ====================
 
 ====================
-     2020-07-29    
+     2020-09-01    
 ====================
 
 ====================
-     2020-07-28    
+     2020-08-31    
 ====================
 
 ====================
-     2020-07-27    
+     2020-08-30    
 ====================
 
 ====================
-     2020-07-26    
-====================
-9f282b1  input: synaptics: s3320: Don't expose single tap gesture on enchilada  [LuK1337]
-
-====================
-     2020-07-25    
+     2020-08-29    
 ====================
 
 ====================
-     2020-07-24    
+     2020-08-28    
 ====================
-0cfb4cb  net: Import WireGuard version 1.0.20200712  [Anirudh Gupta]
 
 ====================
-     2020-07-23    
+     2020-08-27    
+====================
+
+====================
+     2020-08-26    
+====================
+
+====================
+     2020-08-25    
+====================
+
+====================
+     2020-08-24    
+====================
+
+====================
+     2020-08-23    
+====================
+
+====================
+     2020-08-22    
 ====================
 
