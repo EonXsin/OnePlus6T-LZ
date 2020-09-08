@@ -1,13 +1,25 @@
 ====================
+     2020-09-07    
+====================
+
+====================
+     2020-09-06    
+====================
+
+====================
      2020-09-05    
 ====================
-9393ec3  Finish code for FIOPS and set FIOPS as default  [Thomas Raines]
+03ec778  Merge branch 'ten' of https://github.com/Evolution-X-Devices/kernel_oneplus_sdm845 into ten  [Thomas Raines]
+f212c98  Finish code for FIOPS and set FIOPS as default  [Thomas Raines]
 2beee59  Bump to 1.3  [Thomas Raines]
 9ea8a31  fiops-iosched: update for linux 4.9  [flar2]
 
 ====================
      2020-09-04    
 ====================
+ff2e49d  sdm845: Block Tik Tok on the kernel-level  [Justin Crawford]
+4982b6d  kronic_defconfig: Enable TTL and HL targets in nftables  [Justin Crawford]
+7910ea6  lib/string.c: implement stpcpy  [Nick Desaulniers]
 
 ====================
      2020-09-03    
@@ -47,13 +59,5 @@
 
 ====================
      2020-08-25    
-====================
-
-====================
-     2020-08-24    
-====================
-
-====================
-     2020-08-23    
 ====================
 
