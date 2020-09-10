@@ -94,15 +94,14 @@ reset
 ############################################################
 # Start Compile
 ############################################################
-
 	echo "	First pass started.."
-	time make "$o" DTC_EXT=/usr/bin/dtc -j$(nproc --all)
+    time make "$o" DTC_EXT=/usr/bin/dtc -j$(nproc --all)
+
 	echo "	First pass completed!"
 	echo "	"
 	#echo "	Starting Second Pass.."
 	#time make "$o" DTC_EXT=/usr/bin/dtc -j$(nproc --all)
 	#echo "	Second pass completed!"
-
 ############################################################
 # Copy image.gz-dtb to /build
 ############################################################

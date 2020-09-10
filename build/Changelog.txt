@@ -1,7 +1,22 @@
 ====================
+     2020-09-12    
+====================
+
+====================
+     2020-09-11    
+====================
+4ee7c4d  Bump to 1.6  [Thomas Raines]
+4ad3904  Merge branch 'ten' of https://github.com/Evolution-X-Devices/kernel_oneplus_sdm845 into ten  [Thomas Raines]
+10af193  Bump to 1.5. Enable all remaining TCPs. Fix enable westwood as default  [Thomas Raines]
+
+====================
      2020-09-10    
 ====================
-10af193  Bump to 1.5. Enable all remaining TCPs. Fix enable westwood as default  [Thomas Raines]
+49ca7b7  lib/string.c: implement stpcpy  [Nick Desaulniers]
+876c8a7  sdm845: Block Tik Tok on the kernel-level  [Justin Crawford]
+b548e10  kronic_defconfig: Enable TTL and HL targets in nftables  [Justin Crawford]
+e69f0b8  drivers: staging: Fix a few syntax errors  [AnierinB]
+07e68c2  drm/msm/sde: add sysfs node in dpu driver to provide fps  [Shubhashree Dhar]
 
 ====================
      2020-09-09    
@@ -20,6 +35,7 @@ fb8154a  TCP:Enable westwood and set as default  [Thomas Raines]
 ====================
      2020-09-06    
 ====================
+30f0b43  Merge android-linux-stable into IllusionKernel  [Anirudh Gupta]
 03ec778  Merge branch 'ten' of https://github.com/Evolution-X-Devices/kernel_oneplus_sdm845 into ten  [Thomas Raines]
 f212c98  Finish code for FIOPS and set FIOPS as default  [Thomas Raines]
 
@@ -35,6 +51,86 @@ ff2e49d  sdm845: Block Tik Tok on the kernel-level  [Justin Crawford]
 ====================
      2020-09-04    
 ====================
+2ff1175  Merge 4.9.235 into oneplus/SDM845_Q_10.0  [Nathan Chancellor]
+90bf256  Linux 4.9.235  [Greg Kroah-Hartman]
+9fecd91  ALSA: usb-audio: Update documentation comment for MS2109 quirk  [Hector Martin]
+6af4389  HID: hiddev: Fix slab-out-of-bounds write in hiddev_ioctl_usage()  [Peilin Ye]
+d03bc98  btrfs: check the right error variable in btrfs_del_dir_entries_in_log  [Josef Bacik]
+c817c14  usb: storage: Add unusual_uas entry for Sony PSZ drives  [Alan Stern]
+5fd02cc  USB: gadget: u_f: Unbreak offset calculation in VLAs  [Andy Shevchenko]
+f7e0611  USB: gadget: f_ncm: add bounds checks to ncm_unwrap_ntb()  [Brooke Basile]
+849d2b0  USB: gadget: u_f: add overflow checks to VLA macros  [Brooke Basile]
+676057c  overflow.h: Add allocation size calculation helpers  [Kees Cook]
+28d3ae3  usb: host: ohci-exynos: Fix error handling in exynos_ohci_probe()  [Tang Bin]
+aa94df2  USB: Ignore UAS for JMicron JMS567 ATA/ATAPI Bridge  [Cyril Roelandt]
+d376209  USB: quirks: Add no-lpm quirk for another Raydium touchscreen  [Kai-Heng Feng]
+b516a8f  usb: uas: Add quirk for PNY Pro Elite  [Thinh Nguyen]
+a76a6e0  USB: yurex: Fix bad gfp argument  [Alan Stern]
+af75323  device property: Fix the secondary firmware node handling in set_primary_fwnode()  [Heikki Krogerus]
+4e08529  PM: sleep: core: Fix the handling of pending runtime resume requests  [Rafael J. Wysocki]
+9ef0375  xhci: Do warm-reset when both CAS and XDEV_RESUME are set  [Kai-Heng Feng]
+269044c  XEN uses irqdesc::irq_data_common::handler_data to store a per interrupt XEN data pointer which contains XEN specific information.  [Thomas Gleixner]
+6e0d03b  writeback: Fix sync livelock due to b_dirty_time processing  [Jan Kara]
+9228416  writeback: Avoid skipping inode writeback  [Jan Kara]
+92f10de4  writeback: Protect inode->i_io_list with inode->i_lock  [Jan Kara]
+673d5fb  serial: 8250: change lock order in serial8250_do_startup()  [Sergey Senozhatsky]
+3fd7528  serial: pl011: Don't leak amba_ports entry on driver register error  [Lukas Wunner]
+a6673a4  serial: pl011: Fix oops on -EPROBE_DEFER  [Lukas Wunner]
+95c8f68  serial: samsung: Removes the IRQ not found warning  [Tamseel Shams]
+4e513a6  vt_ioctl: change VT_RESIZEX ioctl to check for error return from vc_resize()  [George Kennedy]
+830e8732  vt: defer kfree() of vc_screenbuf in vc_do_resize()  [Tetsuo Handa]
+8e9edff  USB: lvtest: return proper error code in probe  [Evgeny Novikov]
+451bffa  fbcon: prevent user font height or width change from causing potential out-of-bounds access  [George Kennedy]
+0e7f157  btrfs: fix space cache memory leak after transaction abort  [Filipe Manana]
+43b650f  HID: i2c-hid: Always sleep 60ms after I2C_HID_PWR_ON commands  [Hans de Goede]
+2b1c34a  powerpc/perf: Fix soft lockups due to missed interrupt accounting  [Athira Rajeev]
+740cd42  net: gianfar: Add of_node_put() before goto statement  [Sumera Priyadarsini]
+0ad7639  scsi: ufs: Improve interrupt handling for shared interrupts  [Adrian Hunter]
+b2a01a5  scsi: ufs: Fix possible infinite loop in ufshcd_hold  [Stanley Chu]
+63872be  s390/cio: add cond_resched() in the slow_eval_known_fn() loop  [Vineeth Vijayan]
+c223fc8  fs: prevent BUG_ON in submit_bh_wbc()  [Xianting Tian]
+4a04a09  jbd2: abort journal if free a async write error metadata buffer  [zhangyi (F)]
+86d3508  jbd2: make sure jh have b_transaction set in refile/unfile_buffer  [Lukas Czerner]
+7d0806c  usb: gadget: f_tcm: Fix some resource leaks in some error paths  [Christophe JAILLET]
+b32abe5  i2c: rcar: in slave mode, clear NACK earlier  [Wolfram Sang]
+01bb0556  Revert "ath10k: fix DMA related firmware crashes on multiple devices"  [Zhi Chen]
+68604a8  efi: provide empty efi_enter_virtual_mode implementation  [Andrey Konovalov]
+bf469a0  USB: sisusbvga: Fix a potential UB casued by left shifting a negative value  [Changming Liu]
+6910354  powerpc/spufs: add CONFIG_COREDUMP dependency  [Arnd Bergmann]
+02aac15  KVM: arm64: Fix symbol dependency in __hyp_call_panic_nvhe  [David Brazdil]
+d20348f  media: davinci: vpif_capture: fix potential double free  [Evgeny Novikov]
+62ecb68  EDAC/ie31200: Fallback if host bridge device is already initialized  [Jason Baron]
+1b3fb46  scsi: fcoe: Memory leak fix in fcoe_sysfs_fcf_del()  [Javed Hasan]
+ae1924d  ceph: fix potential mdsc use-after-free crash  [Xiubo Li]
+aa8c818  scsi: iscsi: Do not put host in iscsi_set_flashnode_param()  [Jing Xiangfeng]
+50675a1  locking/lockdep: Fix overflow in presentation of average lock-time  [Chris Wilson]
+2eac5a4  drm/nouveau: Fix reference count leak in nouveau_connector_detect  [Aditya Pakki]
+f4605dc  drm/nouveau/drm/noveau: fix reference count leak in nouveau_fbcon_open  [Aditya Pakki]
+43f90dc  cec-api: prevent leaking memory through hole in structure  [Hans Verkuil]
+4142499  mips/vdso: Fix resource leaks in genvdso.c  [Peng Fan]
+31d0d72  rtlwifi: rtl8192cu: Prevent leaking urb  [Reto Schneider]
+e840d01  PCI: Fix pci_create_slot() reference count leak  [Qiushi Wu]
+bb3a2d5  omapfb: fix multiple reference count leaks due to pm_runtime_get_sync  [Aditya Pakki]
+26af579  selftests/powerpc: Purge extra count_pmc() calls of ebb selftests  [Desnes A. Nunes do Rosario]
+956e289  scsi: lpfc: Fix shost refcount mismatch when deleting vport  [Dick Kennedy]
+c8e94df  drm/amdgpu/display: fix ref count leak when pm_runtime_get_sync fails  [Navid Emamdoost]
+66ac45f  drm/amdgpu: fix ref count leak in amdgpu_display_crtc_set_config  [Navid Emamdoost]
+5176648  drm/amd/display: fix ref count leak in amdgpu_drm_ioctl  [Navid Emamdoost]
+d6c64bb  drm/amdgpu: fix ref count leak in amdgpu_driver_open_kms  [Navid Emamdoost]
+4daf229  drm/radeon: fix multiple reference count leak  [Aditya Pakki]
+ae82467  drm/amdkfd: Fix reference count leaks.  [Qiushi Wu]
+2205c49  iommu/iova: Don't BUG on invalid PFNs  [Robin Murphy]
+0812b2b  scsi: target: tcmu: Fix crash on ARM during cmd completion  [Bodo Stroesser]
+a415132  media: pci: ttpci: av7110: fix possible buffer overflow caused by bad DMA value in debiirq()  [Jia-Ju Bai]
+203bedf  arm64: dts: qcom: msm8916: Pull down PDM GPIOs during sleep  [Stephan Gerhold]
+ed7edd4  ASoC: tegra: Fix reference count leaks.  [Qiushi Wu]
+afe08604  ALSA: pci: delete repeated words in comments  [Randy Dunlap]
+65685c3  gre6: Fix reception with IP6_TNL_F_RCV_DSCP_COPY  [Mark Tomlinson]
+90c4172  ipvlan: fix device features  [Mahesh Bandewar]
+9a8098e  tipc: fix uninit skb->data in tipc_nl_compat_dumpit()  [Cong Wang]
+eedf146  net: Fix potential wrong skb->protocol in skb_vlan_untag()  [Miaohe Lin]
+f1d1fba  bonding: show saner speed for broadcast mode  [Jarod Wilson]
+8512aaa  bonding: fix a potential double-unregister  [Cong Wang]
 
 ====================
      2020-09-03    
@@ -54,13 +150,5 @@ ff2e49d  sdm845: Block Tik Tok on the kernel-level  [Justin Crawford]
 
 ====================
      2020-08-30    
-====================
-
-====================
-     2020-08-29    
-====================
-
-====================
-     2020-08-28    
 ====================
 
