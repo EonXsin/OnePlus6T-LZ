@@ -256,6 +256,12 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		?= $(SUBARCH)
 CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
+LZ		:= $(LINARO)
+LZ_TC		:= $(LINARO_TC)
+ARCH		:= arm64
+SUBARCH		:= arm64
+CC              := aarch64-linux-gnu-
+CROSS_COMPILE	:= $(LZ_TC)aarch64-linux-gnu-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
