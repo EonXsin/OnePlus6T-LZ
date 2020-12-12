@@ -1,0 +1,66 @@
+====================
+     2020-12-04    
+====================
+1a1e7df  add changelog script  [Thomas Raines]
+51701ab  Fix makefile, add fiops-iosched.c, enable TCP WESTWOOD as default  [Thomas Raines]
+9b7619e  TCP:Enable westwood and set as default  [Thomas Raines]
+8cb0cd3  Finish code for FIOPS and set FIOPS as default  [Thomas Raines]
+0987664  cpufreq_ondemand:tweaking the gov  [TeamFahQ]
+92daf29  makefile: Enable O3 optimizations  [TeamFahQ]
+703adea  lz-sysctl tweaks  [TeamFahQ]
+5a4d27f  My insane readahead tweaks  [TeamFahQ]
+c3a28b9  LightningZap! staging 11 branch  [Thomas Raines]
+
+====================
+     2020-12-03    
+====================
+
+====================
+     2020-12-02    
+====================
+
+====================
+     2020-12-01    
+====================
+
+====================
+     2020-11-30    
+====================
+
+====================
+     2020-11-29    
+====================
+
+====================
+     2020-11-28    
+====================
+
+====================
+     2020-11-27    
+====================
+
+====================
+     2020-11-26    
+====================
+
+====================
+     2020-11-25    
+====================
+
+====================
+     2020-11-24    
+====================
+
+====================
+     2020-11-23    
+====================
+
+====================
+     2020-11-22    
+====================
+b3f561f  Merge android-linux-stable into IllusionKernel  [Anirudh Gupta]
+
+====================
+     2020-11-21    
+====================
+
