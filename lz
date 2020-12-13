@@ -53,7 +53,7 @@
 ############################################################
 grep -o  'LZ-R-...' arch/arm64/configs/lz_defconfig >temp
 VER=$(<temp)
-	kn=LZ-R-$VER.zip
+	kn=$VER.zip
 
 ############################################################
 # Clear terminal
