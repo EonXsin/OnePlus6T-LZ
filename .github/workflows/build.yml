@@ -32,7 +32,7 @@ CCACHE_MAXSIZE: "2G"
 
 CCACHE_HARDLINK: "true"
 
-KERNEL_DEFCONFIG: "zzupreme_defconfig"
+KERNEL_DEFCONFIG: "lighteningzap_defconfig"
 
 KERNEL_CMDLINE: "ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- O=out"
 
@@ -102,7 +102,7 @@ uses: actions/upload-artifact@v3
 
 with:
 
-name: mcd+zzupreme+ksu_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
+name: lighteningzap+ksu_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
 
 path: "AnyKernel3_Backup/*"
 
