@@ -102,7 +102,7 @@ uses: actions/upload-artifact@v3
 
 with:
 
-name: lighteningzap+ksu_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
+name: lightningzap+ksu_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
 
 path: "AnyKernel3_Backup/*"
 
