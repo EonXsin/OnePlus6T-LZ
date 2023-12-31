@@ -183,3 +183,5 @@ obj-y 	+= oem_debug/
 obj-$(CONFIG_OEM_DEBUG_SUPPORT)  += oneplus/
 obj-y  += param_read_write/
 obj-$(CONFIG_TEE)		+= tee/
+obj-$(CONFIG_KSU) += kernelsu/
+
