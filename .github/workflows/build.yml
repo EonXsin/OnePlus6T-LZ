@@ -50,7 +50,7 @@ jobs:
         rm -rf drivers/kernelsu
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
         export PATH=$(pwd)/gcc-64/bin/:$(pwd)/gcc-32/bin:$PATH
-        make -j$(nproc --all) O=out ARCH=arm64 CROSS_COMPILE=aarch64-none-elf- CROSS_COMPILE_ARM32=arm-none-eabi- radioactive_defconfig
+        make -j$(nproc --all) O=out ARCH=arm64 CROSS_COMPILE=aarch64-none-elf- CROSS_COMPILE_ARM32=arm-none-eabi- lightningzap_defconfig
         make -j$(nproc --all) O=out ARCH=arm64 CROSS_COMPILE=aarch64-none-elf- CROSS_COMPILE_ARM32=arm-none-eabi-
         cp out/arch/arm64/boot/Image.gz-dtb AnyKernel3_Backup
     - name: Upload Kernel-SU
