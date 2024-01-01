@@ -42,6 +42,7 @@ jobs:
       id: get_time
       run: |
         echo "TIME=$(TZ=UTC+5:30 date +%m%d%H%M )" >> $GITHUB_OUTPUT
+
     - name: Build Kernel-With-KernelSU
       run: |
         rm -rf KernelSU
@@ -51,8 +52,9 @@ jobs:
         make $KERNEL_CMDLINE $KERNEL_DEFCONFIG CC="ccache clang"
         make $KERNEL_CMDLINE CC="ccache clang" -j$(nproc --all)
         cp out/arch/arm64/boot/Image.gz-dtb AnyKernel3_Backup
+
     - name: Upload Kernel-SU
       uses: actions/upload-artifact@v3
       with:
-        name: Lightning_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
+        name: lightning-zap+ksu_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
         path: "AnyKernel3_Backup/*"
