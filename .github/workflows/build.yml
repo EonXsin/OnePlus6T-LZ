@@ -16,7 +16,7 @@ jobs:
       CCACHE_NOHASHDIR: "true"
       CCACHE_MAXSIZE: "2G"
       CCACHE_HARDLINK: "true"
-      KERNEL_DEFCONFIG: "enchilada_defconfig"
+      KERNEL_DEFCONFIG: "lightningzap_defconfig"
       KERNEL_CMDLINE: "ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- O=out"
     steps:
     - name: Checkout
@@ -54,5 +54,5 @@ jobs:
     - name: Upload Kernel-SU
       uses: actions/upload-artifact@v3
       with:
-        name: caffiene_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
+        name: Lightning_kernel_op6-KSU-${{ steps.get_time.outputs.TIME }}
         path: "AnyKernel3_Backup/*"
